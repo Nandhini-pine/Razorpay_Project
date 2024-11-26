@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+    <div class="text-center mt-5 ">
+      <img src="{% static 'images/sucess.png' %}" class="img-fluid img-responsive" width="300" height="300">
+        <h2>Thanks your Payment has been recieved</h2>
+        <a class="btn btn-primary" href="{% url 'home' %}">Buy Again</a>
+    </div>
+    
+
+{% endblock %}
